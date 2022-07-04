@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utp-8">  
+        <title>Nossos produtos - Cervejaria XXYY</title>
+        <meta name="description" content="Experimente nossas deliciosas IPAs e REDs. Feitas para quem gosta de boa cerveja.">
+        <meta name="keywords" content="Comprar cervejas, XXYY produtos, cervejas baratas, comprar chope">
+        <link rel="stylesheet" type="text/css" href="css/header.css">
+	    <link rel="stylesheet" type="text/css" href="css/footer.css">
+        <link rel="stylesheet" type="text/css" href="css/body.css">
+        <link rel="stylesheet" type="text/css" href="css/produtos.css">
+        <link rel="stylesheet" type="text/css" href="css/aoInicio.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+	    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <nav class="nav">
+                <div class="header">
+                    <div class="left-side-h">
+                        <img class="logo-div" src="image/logo.png" alt="XXYY logo">
+                        <p>XXYY</p>
+                    </div>
+                    <div class="right-side-h">
+                        <a class="h-link" href="home.html">Home</a>
+                        <a class="h-link" href="sobrenos.html">Sobre nós!</a>
+                        <a class="h-link" href="produtos.html">Produtos</a>
+                        <a class="h-link" href="calculadora.html">Calculadora</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        
+        <main>
+
+            <div>
+                <img class="banner" src="image/brewerypic.jpg" alt="banner da cervejaria XXYY">
+            </div>
+            
+            <h1 class="h1">
+                Nossos produtos
+            </h1>
+
+            <div class="prod-flex">
+                <div class="prod-cell">
+                    <div class="image-container">
+                        <img class="image-sizing" src="image/prod1.jpg" alt="Cerveja Ale XXYY">
+                    </div>
+                    <p>Cerveja IPA 450ml</p>
+                    <button disabled>Indisponível</button>
+                </div>
+                <div>
+                    <div class="image-container">
+                        <img class="image-sizing" src="image/prod4.jpg" alt="Cerveja Ale XXYY">
+                    </div>
+                    <p>Cerveja Red 450ml</p>
+                    <button disabled>Indisponível</button>
+                </div>
+                <div>
+                    <div class="image-container">
+                        <img class="image-sizing" src="image/prod2.jpg" alt="Cerveja Ale XXYY">
+                    </div>
+                    <p>Growler chope 1,8 litros</p>
+                    <button disabled>Indisponível</button>
+                </div>
+                <div>
+                    <div class="image-container">
+                        <img class="image-sizing" src="image/prod3.jpg" alt="Cerveja Ale XXYY">
+                    </div>
+                    <p>Chope</p>
+                    <label> Litros de chope: </label>
+                    <input type="number" placeholder="litros">
+                    <br><br>
+                    <button disabled>Indisponível</button>
+                    <p>Não sabe quantos litros pedir? Use nossa </p>
+                    <a class="link" href="calculadora.html"> calculadora.</a>
+                    
+                </div>
+            </div>   
+            <button class="aoInicio" onclick="topFunction()" id="topBtn" title="Subir">Subir</button>
+        </main>
+        <footer>
+            <div>
+                <h1>XXYY cervejaria</h1>
+                <p>São Paulo</p>
+                <a href="sobrenos.html">sobre nós</a>
+            </div>
+        </footer>
+
+        <script>
+            mybutton = document.getElementById("topBtn");
+
+            function topFunction() {
+                document.body.scrollTop = 0; 
+                document.documentElement.scrollTop = 0; 
+            }
+        </script>
+    </body>
+    
+</html>

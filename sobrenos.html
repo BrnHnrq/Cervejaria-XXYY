@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utp-8">  
+        <title>Conheça nossa história - Cervejaria XXYY</title>
+        <meta name="description" content="Há quase 97 anos no mercado, a cervejaria XXYY especializa em oferecer o melhor da cerveja artenasal.">
+        <meta name="keywords" content="Nossa historia, XXYY sobre nos">
+        <link rel="stylesheet" type="text/css" href="css/header.css">
+	    <link rel="stylesheet" type="text/css" href="css/footer.css">
+        <link rel="stylesheet" type="text/css" href="css/body.css">
+        <link rel="stylesheet" type="text/css" href="css/aoInicio.css">
+        <link rel="stylesheet" type="text/css" href="css/sobrenos.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+	    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">   
+    </head>
+    <body>
+        <header>
+            <nav class="nav">
+                <div class="header">
+                    <div class="left-side-h">
+                        <img class="logo-div" src="image/logo.png" alt="XXYY logo">
+                        <p>XXYY</p>
+                    </div>
+                    <div class="right-side-h">
+                        <a class="h-link" href="home.html">Home</a>
+                        <a class="h-link" href="sobrenos.html">Sobre nós!</a>
+                        <a class="h-link" href="produtos.html">Produtos</a>
+                        <a class="h-link" href="calculadora.html">Calculadora</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        
+        <main>
+
+            <div>
+                <img class="banner" src="image/brewerypic.jpg" alt="Fabrica de cerveja artenasal XXYYY">
+            </div>
+
+            <div class="about-div">
+                <h1>Sobre nós</h1>
+                <p>Somos uma pequena empresa localizada na capital de São Paulo, onde fazemos cerveja artenasal com uma receita quase centenária.
+                    Estamos no mercado há 87 anos, e nesse periodo de tempo vendemos nossos produtos para diversas ocasiões, como shows, festas, churrascos de familía 
+                    e até encontros diplomáticos.
+                </p>
+
+            </div>
+
+            <div class="image-grid">
+                <img src="image/cerveja2.jpg" alt="Copos de Cerveja XXYY">
+                <img src="image/cerveja3.jpg" alt="Copos de Cerveja XXYY">
+                <img src="image/cerveja4.jpg" alt="Copos de Cerveja XXYY">
+            </div>
+
+
+            
+            <button class="aoInicio" onclick="topFunction()" id="topBtn" title="Subir">Subir</button>
+        </main>
+
+        <footer>
+            <div>
+                <h1>XXYY cervejaria</h1>
+                <p>São Paulo</p>
+                <a href="sobrenos.html">sobre nós</a>
+            </div>
+        </footer>
+
+
+        <script>
+            mybutton = document.getElementById("topBtn");
+
+            function topFunction() {
+                document.body.scrollTop = 0; 
+                document.documentElement.scrollTop = 0; 
+            }
+        </script>
+    </body>
+    
+</html>

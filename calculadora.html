@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utp-8">  
+        <title>Calculadora de Chope - cervejaria XXYY</title>
+        <meta name="description" content="Está com duvida de quanto chope sua festa precisará? Use nossa calculadora e descubra!">
+        <meta name="keywords" content="Como calcular litros de chope, calculadora de chope, formula para calcular chope">
+        <link rel="stylesheet" type="text/css" href="css/header.css">
+	    <link rel="stylesheet" type="text/css" href="css/footer.css">
+        <link rel="stylesheet" type="text/css" href="css/body.css">
+        <link rel="stylesheet" type="text/css" href="css/calculadora.css">
+        <link rel="stylesheet" type="text/css" href="css/aoInicio.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+	    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <nav class="nav">
+                <div class="header">
+                    <div class="left-side-h">
+                        <img class="logo-div" src="image/logo.png" alt="Fabrica de cerveja artenasal XXYYY">
+                        <p>XXYY</p>
+                    </div>
+                    <div class="right-side-h">
+                        <a class="h-link" href="home.html">Home</a>
+                        <a class="h-link" href="sobrenos.html">Sobre nós!</a>
+                        <a class="h-link" href="produtos.html">Produtos</a>
+                        <a class="h-link" href="calculadora.html">Calculadora</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        
+        <main>
+
+            <div>
+                <img class="banner" src="image/brewerypic.jpg" alt="banner da cervejaria XXYY">
+            </div>   
+            
+            <div class="div-body">
+                    <div class="container-calculadora">
+                        <h1>Calculadora de chope</h1>  
+                        <label> Número estimado de pessoas no evento: </label>
+                        <input type="number" id="nPessoas" placeholder="Numero de pessoas">
+                        <label> Quantas horas de evento: </label>
+                        <input type="number" id="nHoras" placeholder="Horas de eventos">
+                        <button class="button-calc" onclick="calcular()">Calcular</button>
+                        <p class="resultado" id="resultado">Resultado: </p>
+                    </div>
+                <div class="container-cf">
+                    <h2> Como funciona?</h2>
+                    <p>
+                        O ideal é calcular 1 litro de chope por pessoa caso a duração do evento seja menor que 2 horas. Caso seja maior de 2 horas, deverá calcular 2 litros por pessoa.
+                    </p>
+                </div>
+            </div>
+            <button class="aoInicio" onclick="topFunction()" id="topBtn" title="Subir">Subir</button>
+        </main>
+        <footer>
+            <div>
+                <h1>XXYY cervejaria</h1>
+                <p>São Paulo</p>
+                <a href="sobrenos.html">sobre nós</a>
+            </div>
+        </footer>
+
+        <script>
+            mybutton = document.getElementById("topBtn")
+
+            function topFunction() {
+                document.body.scrollTop = 0; 
+                document.documentElement.scrollTop = 0; 
+            }
+
+
+            function calcular(){
+                let horas = document.getElementById("nHoras").value
+                let nPessoas = document.getElementById("nPessoas").value
+
+
+                let total = 0
+
+                if( horas != '' && nPessoas != ''){
+                    if(horas > 2){
+                    total = nPessoas * 2
+                    }
+                    else{
+                        total = nPessoas
+                    }
+
+                    document.getElementById("resultado").innerHTML = "Resultado: " + total + " litros"
+            }
+    
+            }
+        </script>
+    </body>
+    
+</html>

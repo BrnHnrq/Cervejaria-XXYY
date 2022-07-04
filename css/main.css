@@ -1,0 +1,83 @@
+
+.banner{
+    width: 100%;
+    border-bottom: 5px solid rgb(247, 173, 37);
+}
+
+.main-pg-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+    
+    margin-right: 20px;
+    margin-left: 20px;
+
+    padding-top: 20px;
+}
+
+.m-link{
+    font-size: 40px;
+    color: rgb(212, 158, 7);
+    text-decoration: none;
+}
+
+.m-link:hover{
+    color: rgb(255, 208, 0);
+}
+
+.m-link:active{
+    color: rgb(247, 173, 37);
+}
+
+.m-link:visited{
+    color: rgb(104, 68, 1)e;
+}
+
+.text-info{
+    width: 600px;
+    font-size: 20px;
+}
+
+.main-pg-img{
+    width: 100%;
+    border-radius: 5px;
+    border: 2px outset rgb(247, 173, 37);
+}
+
+.main-pg-img-div{
+    width: 800px;
+    
+}
+
+.prod-imgs-flex{
+    display: grid;
+    grid-template-columns: 400px 400px;
+    justify-content: center;
+    text-align: center;
+    grid-column-gap: 80px;
+    
+}
+
+.prod-imgs-flex p{
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.prod-img-div{
+    width: 400px;
+    
+}
+
+.prod-img-div img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    border: 2px outset rgb(247, 173, 37);
+}
+
+.products{
+    text-align: center;
+    margin-top: 80px;
+}
+
